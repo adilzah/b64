@@ -30,7 +30,8 @@
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.13",
     "vuetify": "1.0.18",
-    "vuex": "3.0.1"
+    "vuex": "3.0.1",
+    "axios": "0.18.0"
   },
   "browserslist": [
     "> 1%",

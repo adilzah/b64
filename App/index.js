@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Vuetify from 'vuetify'
+import axios from 'axios';
+
 import App from './App.vue'
 
 Vue.config.productionTip = false
@@ -22,5 +24,6 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   template: "<div><router-view></router-view></div>",
-  router
+  router,
+  axios
 })

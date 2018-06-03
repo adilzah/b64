@@ -14,7 +14,7 @@ namespace b64.Controllers
     {
         [HttpGet]
         [Route("{value}")]
-        public ActionResult<string> Post(string value)
+        public ActionResult<string> Get(string value)
         {
             if(string.IsNullOrEmpty(value))
             {
