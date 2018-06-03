@@ -11828,11 +11828,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\adilz\\Documents\\repo\\b64\\b64.csproj",
+      "projectUniqueName": "C:\\Users\\adilz\\Documents\\repo\\b64\\b64.csproj",
       "projectName": "b64",
-      "projectPath": "c:\\Users\\adilz\\Documents\\repo\\b64\\b64.csproj",
+      "projectPath": "C:\\Users\\adilz\\Documents\\repo\\b64\\b64.csproj",
       "packagesPath": "C:\\Users\\adilz\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\adilz\\Documents\\repo\\b64\\obj\\",
+      "outputPath": "C:\\Users\\adilz\\Documents\\repo\\b64\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

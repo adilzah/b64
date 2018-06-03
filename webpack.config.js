@@ -57,7 +57,7 @@ module.exports = {
     noInfo: true,
     overlay: true,
     proxy: {
-      '/api/*': {
+      '/api*': {
           target: 'http://localhost:5000'
       }
   }
