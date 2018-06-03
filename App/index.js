@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Vuetify from 'vuetify'
 import axios from 'axios';
 
-import App from './App.vue'
+const App = r => require.ensure([], () => r(require('./App.vue')))
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)

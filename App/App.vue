@@ -22,7 +22,7 @@
                         
                         <v-card-text>
                         
-                        <p> Encoded String : 
+                        <p class="display-1" v-if="encodedResult">  
                             <code>{{ encodedResult }}</code>
                             </p>
                       
@@ -44,7 +44,7 @@
                         </v-card-title>
                         
                         <v-card-text>
-                        <p>Decoded String : <code>{{ decodedResult }}</code></p>
+                        <p v-if="decodedResult" class="display-1"> <code>{{ decodedResult }}</code></p>
 
                         <v-text-field label="What do you want to decode?" v-model="stringToDecode" />
                              <v-btn v-on:click="decode">
