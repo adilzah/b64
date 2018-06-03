@@ -12,9 +12,9 @@ namespace b64.Controllers
     {
         public IActionResult Index()
         {
-            return Redirect("/swagger");
+           return View();
         }
-
+        
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
