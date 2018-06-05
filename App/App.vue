@@ -4,22 +4,23 @@
        
         <v-container grid-list-md>
             <v-layout row wrap>
-              
-                <v-flex xs12>
-
-                      <h1 class="display-1">B64 Converter</h1>
-
-                <p>Turns strings into B64 and back using UTF-16 for now</p>
-                   <v-alert :value="error" color="error" icon="warning">
+              <v-flex xs12>
+                  <v-alert :value="error" color="error" icon="warning">
                         {{error}}
                     </v-alert>
 
+              </v-flex>
+                <v-flex xs6>
+
+                   
 
                     <v-card>
-                        <v-card-title>
-                            <h3 class="headline">String to Base64</h3>
-                        </v-card-title>
-                        
+                        <v-toolbar dark color="red">
+                <v-toolbar-title>String to Base64</v-toolbar-title>
+                <v-spacer></v-spacer>
+            
+              </v-toolbar>
+
                         <v-card-text>
                         
                         <p class="display-1" v-if="encodedResult">  
@@ -37,12 +38,15 @@
                     
                 </v-flex>
 
-                  <v-flex xs12>
+                  <v-flex cs6>
                     <v-card>
-                        <v-card-title>
-                            <h3 class="headline">Base64 to String</h3>
-                        </v-card-title>
-                        
+
+                           <v-toolbar dark color="green">
+                <v-toolbar-title>Base64 to String</v-toolbar-title>
+                <v-spacer></v-spacer>
+            
+              </v-toolbar>
+
                         <v-card-text>
                         <p v-if="decodedResult" class="display-1"> <code>{{ decodedResult }}</code></p>
 
