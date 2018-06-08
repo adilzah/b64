@@ -2,12 +2,17 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Vuetify from 'vuetify'
 import axios from 'axios';
+import BootstrapVue from 'bootstrap-vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 const App = r => require.ensure([], () => r(require('./App.vue')))
+//import App from './App'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
-Vue.use(Vuetify)
+Vue.use(BootstrapVue)
 
 const routes = [
   { 
