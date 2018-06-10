@@ -4,11 +4,11 @@ import Vuetify from 'vuetify'
 import axios from 'axios';
 import BootstrapVue from 'bootstrap-vue'
 
+import App from './App'
+import B64 from './B64'
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-const App = r => require.ensure([], () => r(require('./App.vue')))
-//import App from './App'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -18,17 +18,19 @@ const routes = [
   { 
     path: '/', 
     component: App
+  },
+  { 
+    path: '/base64', 
+    component: B64
   }
 ]
 
 const router = new VueRouter({
-  routes,
-  mode: 'history'
+  routes
 })
 
 new Vue({
   el: '#app',
-  template: "<div><router-view></router-view></div>",
   router,
   axios
 })
